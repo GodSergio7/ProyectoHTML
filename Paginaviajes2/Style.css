@@ -1,0 +1,185 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: bisque
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+}
+
+#reserva{
+    border: solid;
+    text-align: center;
+    width: auto;
+    
+
+}
+#reserva-titulo{
+    font-size: 40px;
+}
+
+.navegacion{
+    display: flex;
+    border: solid 2px;
+    margin: 15px;
+    padding: 10px;
+    flex-direction: row;
+    background-color: beige;
+    justify-content: center;
+}
+
+.opcion{
+    font-size: 30px ;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+.oferta{
+    margin: 15px;
+    border: 2px solid;
+    text-align: center;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+}
+
+#destinos{
+    border: solid 2px;
+    padding: 20px;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.titulo{
+    font-size: 40px;
+}
+
+.articulo{
+    text-align: center;
+    border: solid 2px;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 20px;
+    padding-top: 0;
+    width: 175px;
+}
+
+.articulo:hover{
+    background-color: #fff8e1;
+    transform: scale(1.02);
+    transition: all 0.3 ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media(max-width: 768px){
+    #destinos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navegacion{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#formulario input,
+#formulario select,
+#formalario button{
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: solid 1px #ccc;
+}
+
+#formulario button{
+    background-color: #0077b6;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3;
+}
+
+#formulario button{
+    background-color:#023e8a;
+}
+
+#opiniones{
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#opiniones{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media(min-width: 768px){
+    #opiniones{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.opinion{
+    background-color: #fff3e0;
+    border: 2px solid #ffcc80;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.opinion:hover{
+    transform: scale(1.02);
+}
+
+.texto-opinion{
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.autor{
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+}
+
+.texto-opinion::before{
+    content: "“";
+    font-size: 30px;
+    color: #ffa726;
+}
+
+.texto-opinion::after {
+    content: "”";
+    font-size: 30px;
+    color: #ffa726;
+}
+
+.titulo-opinion{
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.titulo-opinion::after{
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #ffa726;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
